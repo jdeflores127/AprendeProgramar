@@ -1,0 +1,52 @@
+.container-flexwrap{
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;/*acomoda verticalmente los elementos cuando se reduce el espacio*/
+    flex-wrap: nowrap;/*los hijos se mantienen horizontales pero cuando se reduce el espacio reducen sus dimensiones*/
+    flex-wrap: wrap-reverse;/*acomoda verticalmente los elementos cuando se reduce el espacio, pero el acomodo lo hace lo mas abajo posible del contenedor*/
+    padding: 5px;
+    height: 400px;
+}
+
+.container-flexwrap div{
+    background-color: chocolate;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.container-flexdirection{
+    background-color: darkblue;
+    display: flex;
+    padding: 5px;
+    height: 400px;
+    flex-direction: column;/*los acomoda verticalmente y lo mas a la izquierda*/
+    flex-direction: column-reverse;/*los acomoda verticalmente, pero lo mas abajo posible*/
+    flex-direction: row;/*los acomoda horizontalmente si la pantalla se hace mas pequeña, modifica el tamaño*/
+    /*posicionamiento del flex en el eje x*/
+    justify-content: flex-end; /*acomoda lo mas a la derecha posible*/
+    justify-content: center; /*lo alinea al centro*/
+    justify-content: space-between; /*distribuye todos los flex a lo ancho del contonedor*/
+    justify-content: space-around; /*distribuye todos los flex a lo ancho del contonedor pero dejando un margen entre hijos mas amplio*/
+    justify-content: space-evenly; /*distribuye todos los flex a lo ancho del contonedor pero dejando un margen entre hijos del mismo tamano*/
+    justify-content: flex-start; /*ordena el flex por defecto*/
+
+    /*posicionamiento en el eje Y*/
+    align-items: center; /*lo alinea en el eje y al centro*/
+    align-items: flex-end; /*lo mas abajo posible*/
+    align-items: flex-start; /*lo mas arriba posible*/
+    align-items: stretch; /*si eliminamos el alto de los hijos, estos se estiraran para alcanzar la altira del padre*/
+    align-items: baseline; /*alinea los elementos en un mismo renglon*/
+
+}
+
+.container-flexdirection div{
+    background-color: chocolate;
+    border: 2px solid black;
+    height: 15px;
+}
+
+.container-flexdirection span{
+    font-size:3em;
+    padding-top: 2em;
+}
