@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>React primera app</title>
+    </head>
+    <body>
+
+        <div id="root"></div>
+
+        <script type="text/babel">
+            //Babel se encarga de la compatibilidad de codigo moderno a navegadores viejos
+            const nombrePersonalizado='kokun';
+            const h1Tag=<h1>hola mundo soy {nombrePersonalizado}</h1>;
+            
+
+            //obtenemos referencia al elemento html donde queremos renderizar el elemento
+            const idRootElement=document.getElementById("root");
+            ReactDOM.render(h1Tag,idRootElement);
+        </script>
+    </body>
+</html>
