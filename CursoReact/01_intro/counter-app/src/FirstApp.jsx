@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//Las proptypes sirven para definir el tipo a las propiedades
+import PropTypes from 'prop-types';
 
 /*Al definir una variable fuera de la funcion, nos permite
 que la variable no se vuelva a reprosesar cuando cambie el estado
@@ -25,8 +27,8 @@ un react child cuando se manda un objeto*/
 //const nombrePersonalizado = (valor1,valor2)=>valor1+valor2;
 
 export const FirstApp = ({title,subtitulo}) => {
+  
   return (
-
     /*Dado que react no nos permite devolver mas de un elemento 
     deberemos usar un fragmento representado por <>*/
     <>
@@ -36,5 +38,14 @@ export const FirstApp = ({title,subtitulo}) => {
       <code>{subtitulo+500}</code>
     </>
   )
+}
+//Nos permite definir el tipado del elemento
+FirstApp.propTypes={
+  title: PropTypes.string.isRequired,
+  subtitulo: PropTypes.number
+}
+//El default prop se ejecuta antes del proptype y si no hay valor añade uno por defecto
+FirstApp.defaultProps={
+  subtitulo: 560798812
 }
 
