@@ -1,9 +1,12 @@
 const personajes=['GOKU','VEGETA','TRUNKS'];
+const poderPelea=['GOKU',12];
+
+export const poderesPeleaByPersonaje=()=>{return poderPelea};
 
 //obtener el primer elemento
 console.info("Desestructuracion en primer elemento");
 const[personaje1]=personajes;
-console.log(personaje1);
+console.log(personaje1); 
 
 //para obtener el segundo elemento realizar
 console.info("Desestructuracion en segundo elemento");

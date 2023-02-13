@@ -4,10 +4,10 @@ const saludar = function saludar(nombre){
 }
 
 //COnversion en funcion flecha
-const saludarFlecha = (nombre)=> `hola ${nombre}` ;
+export const saludarFlecha = (nombre)=> `hola ${nombre}` ;
 
 //Para devolver objetos usando el parentesis
-const devolverObjeto = () =>(
+export const devolverObjeto = () =>(
     {
         id:"AB6788",
         nombre:"Juan carlos"
