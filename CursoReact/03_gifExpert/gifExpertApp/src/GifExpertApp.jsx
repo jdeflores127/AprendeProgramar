@@ -6,7 +6,7 @@ import {Errors} from './components/Errors';
 
 export const GiffExpertApp=()=>{
     //Para cambiar el estado del html implementamos un Hook
-    const [categories, setCategories] = useState(['onePunch','Dragon ball z']);
+    const [categories, setCategories] = useState([]);
     const [error, setError] = useState(undefined);
     const [limpiarError, setLimpiarError] = useState(false);
 

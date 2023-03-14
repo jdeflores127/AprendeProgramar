@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
  
 export const AddCategory = ({agregaCategoria}) => {
 
-    const [categoryValue, setcategoryValue] = useState('a');
+    const [categoryValue, setcategoryValue] = useState();
     //Del objeto event desestructurar el target
     const addCategoryOnChange = ({target}) => {
         setcategoryValue(()=>target.value);
